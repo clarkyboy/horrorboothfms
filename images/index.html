@@ -1,0 +1,46 @@
+
+<?php
+include('dbcon.php');
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple User Login Form Flat Responsive widget Template :: w3layouts</title>
+<!-- For-Mobile-Apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Simple User Login Form Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, SonyErricsson, Motorola Web Design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //For-Mobile-Apps -->
+<!-- Style --> <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+ <script src="js/bootstrap.min.js"></script>
+ <link href="js/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<h1>HORROR BOOTH ATTENDANCE</h1>
+     <div class="contact-form">
+	 <div class="signin">
+     <form>
+	     <input type="text" id="Id_Number" name="Id_Number" class="user" value="Enter Your ID Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Username';}" />
+		 <input type="password" id="Password" name="Password" class="pass" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" />
+         <input type="submit" name="submit2" value="Login" />					
+		 <p><a href="#">Register?</a></p>  
+     </form>
+	 </div>
+	 </div> 
+</div>
+<div class="footer">
+     <p>Copyright &copy; 2015 Simple User Login Form. All Rights Reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+</div>
+<?php
+  
+  
+     if  (isset($_REQUEST['submit2'])) {
+	 
+		header("location: register.php");
+		}
+	   
+	?>  
+</body>
+</html>
